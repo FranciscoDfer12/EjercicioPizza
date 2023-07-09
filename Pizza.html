@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Developer</title>
+    <link rel="icon" href="img/icons8-pizza-delivery-50.png">
+    <link rel="stylesheet" href="css/csspizza.css">
+</head>
+<body>
+    <div class="Pagina1H">
+        <div class="Pagina1">
+            <div>
+                <nav class="navegation">
+                    <header>
+                        <div class="Psuperior">
+                            <h1 class="texto_principal">La Pizza Developer</h1>
+                        </div>
+                    </header>
+                    <a href="">Conocenos</a>
+                    <a href="">Ubicacion</a>
+                    <a href="">Contactanos</a> 
+                    <a href="/Pizza.html">Realizar un pedido</a> 
+                </nav>
+            </div>
+            
+            <div class="texto1">
+                <h2>Pizza's Developer, Somos tu mejor opcion...<h2>
+                    <br><br><br><br><br>
+                <h1>Ven, prueba y veras... </h1>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="contenido2">
+        <h1> Por favor ingrese su pedido aqui</h1>
+    </div>
+        <div class="body1" id="cardB">
+            <div class="card">
+                <div class="face front">
+                    <img src="img/pizza-pepperoni-aceitunas-sobre-tabla-madera.jpg">
+                    <h3>Tamaños</h3>
+                </div>
+                <div class="face back">
+                    <h3>Tamaños</h3>
+                    <br><br>
+                    <p>Por favor ingrese el Tamaño que desea.</p>
+                    <br>
+                    <span>(Pizza Sencilla Salsa y Queso)</span>
+                    <br><br><br><br>
+                    <form name="form1" id="Tam">
+                        <div id="TamaP">
+                            <input class="InT" type="radio" name="PizzaTamano" id="Pequeña" value="Pequeña"> Pequeña (10cm)
+                            <input class="InT" type="radio" name="PizzaTamano" id="Mediana" value="Mediana"> Mediana (14cm) <br>
+                            <input class="InT" type="radio" name="PizzaTamano" id="Grande" value="Grande"> Grande (16cm)
+                            <br><br><br><br>
+                            <button class="btn1" type="submit" id="TamanoSeleccionado">Definir Tamaño</button>
+                            <button class="btn2" type="reset" id="CancelarTamano"  onclick="cancelar()">Cancelar</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/pizza-gca2b0e9ad_640.jpg">
+                    <h3>Ingredientes</h3>
+                </div>
+                <div class="face back">
+                    <h3>Ingredientes</h3>
+                    <br>
+                    <p>Por favor ingrese los Ingredientes adicionales que desea</p>
+                    <br><br>
+                    <form class="form2" id="inG">
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Champiñon" value= 2> Champiñon
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Tocineta" value= 2> Tocineta  <br>
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Piña" value= 2> Piña 
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Pimentón" value=2> Pimentón 
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Jamón" value=2> Jamón  <br>
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Maiz" value=2> Maiz 
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Cebolla" value=2> Cebolla 
+                        <input class="Ing" type="checkbox" name="SeleIng" id="Pepperoni" value=2> Pepperoni <br> <br> <br> 
+                        <br><br>
+                        <button class="btn1" type="submit" id="IngredientesSeleccionados">Agregar Ingredientes</button>
+                        <button class="btn2" type="reset" id="CancelarIngredientes" onclick="cancelar()">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/drink-gf5a6c0d17_1280.jpg">
+                    <h3>Bebidas</h3>
+                </div>
+                <div class="face back">
+                    <h3>Bebidas</h3>
+                    <br><br><br>
+                    <p>Por favor ingrese que desea tomar</p>
+                    <br><br><br><br>
+                    <form name="form3" id="Beb">
+                    <input type="radio" name="Bebidas" id="Limonada" value="Limonada"> Limonada 3$
+                    <input type="radio" name="Bebidas" id="Té" value="Té"> Té 2$
+                    <input type="radio" name="Bebidas" id="Coca-Cola" value="Coca-Cola"> Coca-Cola 5$
+                    <input type="radio" name="Bebidas" id="Pepsi" value="Pepsi"> Pepsi 5$
+                    <br><br><br><br>
+                    <button class="btn1" type="submit" id="BebidaSeleccionada">Agregar Bebida</button>
+                    <button class="btn2" type="reset" id="CancelarBebida" onclick="cancelar()">Cancelar Bebida</button>              
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="resultado1" class="resultado">
+            <h1 class="TextR">Resumen Pedido</h1>
+            <div class="body2">
+                <div class="card" >
+                    <div class="face front">
+                        <img src="img/pizza-pepperoni-aceitunas-sobre-tabla-madera.jpg">
+                        <h3>Pedido</h3>
+                    </div>
+                    <div class="face back">
+                        <h1>Su Pedido</h1>
+                        <div id="Pfinal"></div>
+                        <br> <br>
+                        <button class="btnF" type="submit" id="PagarOrden">Pagar Pizza</button>
+                        <button class="btnR" type="reset" id="VaciarOrden">Eliminar Orden</button>
+                    </div>
+                </div>
+            </div>
+            <div id="good"></div>
+        </div>
+
+    <script src="js/pizza.js"></script>
+</body>
+</html>
